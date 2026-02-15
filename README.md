@@ -1,97 +1,98 @@
-Cryptocurrency Price Prediction using ARIMA, GARCH & LSTM 📈
-Overview
+# 🚀 Cryptocurrency Price Prediction using ARIMA, GARCH & LSTM
 
-This project explores time-series forecasting techniques to predict cryptocurrency closing prices.
-The goal was to compare traditional statistical models with deep learning approaches and evaluate their effectiveness on highly volatile financial data.
+<p align="center">
+Time-series forecasting of highly volatile cryptocurrency markets using statistical + deep learning models.
+</p>
 
-The repository includes the full notebook and experimental workflow used for modeling and evaluation.
+---
 
-Problem Statement
+## 📌 Project Highlights
 
-Cryptocurrency markets exhibit extreme volatility and nonlinear behaviour, making forecasting challenging.
-This project investigates whether combining statistical time-series models with deep learning can improve prediction accuracy.
+- 📈 Forecast crypto closing prices using **ARIMA, GARCH & LSTM**
+- 🔍 Compare statistical vs deep learning performance
+- ⚡ Detect extreme market anomalies
+- 📊 End-to-end time-series pipeline
 
-Dataset
+---
 
-Historical OHLCV (Open, High, Low, Close, Volume) data for major cryptocurrencies from 2017–2024 was used.
+## 🧠 Problem Motivation
 
-Time resolutions:
+Cryptocurrency markets are extremely volatile and nonlinear.  
+Traditional models struggle to capture complex temporal dependencies.
 
-Hourly
+This project investigates whether combining:
 
-4-hour
+• Statistical models → **ARIMA, GARCH**  
+• Deep learning → **LSTM**
 
-Daily
+can improve forecasting accuracy.
 
-Methodology
-Data Preprocessing
+---
 
-Handling missing values
+## 📊 Dataset
 
-Time-series resampling
+Historical **OHLCV** data of major cryptocurrencies  
+📅 Time span: **2017 – 2024**
 
-Stationarity checks
+Time resolutions used:
+- Hourly
+- 4-Hour
+- Daily
 
-Normalization using MinMax scaling
+---
 
-Feature Engineering
+## ⚙️ Pipeline Architecture
 
-To capture market behaviour, several time-series features were created:
+Raw Crypto Data  
+↓  
+Data Cleaning & Feature Engineering  
+↓  
+Stationarity & Scaling  
+↓  
+ARIMA → Trend Modeling  
+GARCH → Volatility Modeling  
+LSTM → Deep Learning Forecasting  
+↓  
+Model Evaluation (RMSE, MAE)
 
-Moving averages
+---
 
-Rolling mean and rolling standard deviation
+## 🤖 Models Used
 
-Lag features
+### ARIMA — Trend Forecasting
+Captures linear trends and seasonality in time-series data.
 
-Volatility indicators
+### GARCH — Volatility Modeling
+Models conditional variance and market risk behaviour.
 
-Models Implemented
-ARIMA – Trend Forecasting
+### LSTM — Deep Learning Model
+Learns nonlinear temporal patterns and long-term dependencies.
 
-Used to model linear trends and seasonality in price movements.
+🏆 **Best performer:** LSTM achieved lowest RMSE.
 
-GARCH – Volatility Modeling
+---
 
-Used to model conditional variance and capture market risk/volatility.
+## 🚨 Anomaly Detection
 
-LSTM – Deep Learning Model
+Extreme market movements detected using:
+- Z-Score
+- IQR
+- Isolation Forest
 
-A multi-layer LSTM network was trained to learn nonlinear temporal dependencies in crypto price data.
+---
 
-Anomaly Detection
+## 🛠 Tech Stack
 
-Extreme market movements were detected using:
+| Category | Tools |
+|---|---|
+| Language | Python |
+| Data | Pandas, NumPy |
+| ML | Scikit-learn |
+| Deep Learning | TensorFlow, Keras |
+| Time Series | Statsmodels, ARCH |
+| Visualization | Matplotlib, Seaborn |
 
-Z-Score
+---
 
-Interquartile Range (IQR)
+## 📁 Repository Structure
 
-Isolation Forest
-
-Model Evaluation
-
-Models were evaluated using:
-
-RMSE (Root Mean Squared Error)
-
-MAE (Mean Absolute Error)
-
-Result:
-The LSTM model achieved the lowest prediction error and captured nonlinear market patterns more effectively than ARIMA and GARCH.
-
-Tech Stack
-
-Python
-
-Pandas & NumPy
-
-Scikit-learn
-
-TensorFlow / Keras
-
-Statsmodels
-
-ARCH (GARCH)
-
-Matplotlib & Seaborn
