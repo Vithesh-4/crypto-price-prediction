@@ -1,4 +1,4 @@
-# 🚀 Cryptocurrency Price Prediction using ARIMA, GARCH & LSTM
+# Cryptocurrency Price Prediction using ARIMA, GARCH & LSTM
 
 <p align="center">
 Time-series forecasting of highly volatile cryptocurrency markets using statistical + deep learning models.
@@ -6,16 +6,16 @@ Time-series forecasting of highly volatile cryptocurrency markets using statisti
 
 ---
 
-## 📌 Project Highlights
+##  Project Highlights
 
-- 📈 Forecast crypto closing prices using **ARIMA, GARCH & LSTM**
-- 🔍 Compare statistical vs deep learning performance
-- ⚡ Detect extreme market anomalies
-- 📊 End-to-end time-series pipeline
+-  Forecast crypto closing prices using **ARIMA, GARCH & LSTM**
+-  Compare statistical vs deep learning performance
+-  Detect extreme market anomalies
+-  End-to-end time-series pipeline
 
 ---
 
-## 🧠 Problem Motivation
+##  Problem Motivation
 
 Cryptocurrency markets are extremely volatile and nonlinear.  
 Traditional models struggle to capture complex temporal dependencies.
@@ -29,10 +29,10 @@ can improve forecasting accuracy.
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 Historical **OHLCV** data of major cryptocurrencies  
-📅 Time span: **2017 – 2024**
+ Time span: **2017 – 2024**
 
 Time resolutions used:
 - Hourly
@@ -41,7 +41,7 @@ Time resolutions used:
 
 ---
 
-## ⚙️ Pipeline Architecture
+##  Pipeline Architecture
 
 Raw Crypto Data  
 ↓  
@@ -57,7 +57,7 @@ Model Evaluation (RMSE, MAE)
 
 ---
 
-## 🤖 Models Used
+##  Models Used
 
 ### ARIMA — Trend Forecasting
 Captures linear trends and seasonality in time-series data.
@@ -68,11 +68,11 @@ Models conditional variance and market risk behaviour.
 ### LSTM — Deep Learning Model
 Learns nonlinear temporal patterns and long-term dependencies.
 
-🏆 **Best performer:** LSTM achieved lowest RMSE.
+ **Best performer:** LSTM achieved lowest RMSE.
 
 ---
 
-## 🚨 Anomaly Detection
+##  Anomaly Detection
 
 Extreme market movements detected using:
 - Z-Score
@@ -81,7 +81,7 @@ Extreme market movements detected using:
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 | Category | Tools |
 |---|---|
@@ -94,5 +94,4 @@ Extreme market movements detected using:
 
 ---
 
-## 📁 Repository Structure
 
